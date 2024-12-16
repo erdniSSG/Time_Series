@@ -49,7 +49,7 @@ summary(soi_ts_diff)
 #ACF and PACF to identify potential AR and MA orders
 acf(soi_ts_diff)
 pacf(soi_ts_diff)
-
+  
 #fit SARIMA model using auto.arima 
 sarima_model <- auto.arima(soi_ts)
 
