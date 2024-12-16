@@ -1,4 +1,3 @@
-# Load necessary libraries
 install.packages("readxl")
 library(forecast)
 library(tseries) 
