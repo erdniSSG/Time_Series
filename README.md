@@ -2,7 +2,7 @@
 
 Each folder contains code in either python or R with complementing datasets in different formats.
 
-Renewable_energy_pricing contains collected data on energy prices, and energy production, as well as code that uses said data to determine a market strategy for offloading the energy at maximum profit.
+Renewable_energy_pricing contains collected data on energy prices, and energy production, as well as code that uses said data to determine a market strategy for offloading the energy produced at a combined solar and hydropower plant for maximum profit.
 
 Weather_forecast analyzes and forecasts Southern Oscillation Index (SOI) weather data using a SARIMA model.
 
