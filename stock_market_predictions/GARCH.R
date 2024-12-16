@@ -10,7 +10,7 @@ corticeira <- read_excel("CORTICEIRA_AMORIM.xls", skip = 3)
 ctt <- read_excel("CTT_CORREIOS_PORT.xls", skip = 3)
 galp <- read_excel("GALP_ENERGIA_NOM.xls", skip = 3)
 martifer <- read_excel("MARTIFER.xls", skip = 3)
-
+  
 datasets <- list(corticeira, ctt, galp, martifer)
 dataset_names <- list("corticeira", "ctt", "galp", "martifer")
 

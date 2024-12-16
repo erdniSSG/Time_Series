@@ -2,7 +2,7 @@ install.packages("readxl")
 library(forecast)
 library(tseries) 
 library(readxl)
-
+  
 #load data
 corticeira <- read_excel("CORTICEIRA_AMORIM.xls", skip = 3)
 ctt <- read_excel("CTT_CORREIOS_PORT.xls", skip = 3)
