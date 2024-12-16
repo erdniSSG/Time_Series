@@ -6,4 +6,4 @@ Renewable_energy_pricing contains collected data on energy prices, and energy pr
 
 Weather_forecast analyzes and forecasts Southern Oscillation Index (SOI) weather data using a SARIMA model.
 
-stock_marrket_prediction includes data regarding the stock price of 4 different companies, and two code snippets; one ARIMA model fitting to the log returns for forecasting future log returns, and a GARCH model to analyze the volatility of each stock.
+stock_market_prediction includes data regarding the stock price of 4 different companies, and two code snippets; one ARIMA model fitting to the log returns for forecasting future log returns, and a GARCH model to analyze the volatility of each stock.
