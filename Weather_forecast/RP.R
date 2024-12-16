@@ -1,4 +1,3 @@
-# Load necessary libraries
 install.packages("forecast")
 library("forecast")
 library("tseries")
@@ -11,7 +10,7 @@ setwd("Documents")
 #load data
 soi_data_raw <- read.csv("Time_Series_SOI.txt", header = FALSE, col.names = c("YearMonth", "SOI"))
 
-#separate and  convert the year and month
+#separate and  convert year and month
 soi_data_raw$Year <- substr(soi_data_raw$YearMonth, 1, 4)
 soi_data_raw$Month <- substr(soi_data_raw$YearMonth, 5, 6)
 soi_data_raw$Year <- as.numeric(soi_data_raw$Year)
@@ -51,7 +50,7 @@ summary(soi_ts_diff)
 acf(soi_ts_diff)
 pacf(soi_ts_diff)
 
-# Fit SARIMA model using auto.arima 
+#fit SARIMA model using auto.arima 
 sarima_model <- auto.arima(soi_ts)
 
 #residual diagnostics
@@ -75,8 +74,7 @@ forecasted_ts <- ts(forecasted_values$mean, start=c(2024, 2), frequency=12)
 #plot
 plot(forecasted_ts, type="n", xlim=c(2024.1, 2024 + (6/12)), ylim=range(c(forecasted_values$lower, forecasted_values$upper)), xlab="Year", ylab="SOI", main="Forecasted SOI Values")
 lines(forecasted_ts, col="blue")
-
-#add 95% prediction interval
+# prediction interval
 lines(ts(forecasted_values$lower, start=c(2024, 2), frequency=12), col="red", lty=2)
 lines(ts(forecasted_values$upper, start=c(2024, 2), frequency=12), col="red", lty=2)
 
